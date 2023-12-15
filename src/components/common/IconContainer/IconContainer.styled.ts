@@ -1,7 +1,9 @@
-/** @jsxImportSource @emotion/react */
-// import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const Container = styled.span`
+interface Iprop {
+   width: string;
+}
+
+export const Container = styled.span<Iprop>`
    display: block;
 `;

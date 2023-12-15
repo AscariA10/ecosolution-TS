@@ -6,5 +6,5 @@ interface Props {
 }
 
 export const IconContainer: React.FC<Props> = ({ children, width }: Props) => {
-   return <Container>{children}</Container>;
+   return <Container width={width}>{children}</Container>;
 };
