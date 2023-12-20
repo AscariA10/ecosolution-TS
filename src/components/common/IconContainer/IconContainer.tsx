@@ -1,7 +1,9 @@
+import { Iwidth } from "../../../interfaces/style-interfaces";
+
 import { Container } from "./IconContainer.styled";
 
 interface Props {
-   width: string;
+   width: Iwidth;
    children: React.ReactNode;
 }
 

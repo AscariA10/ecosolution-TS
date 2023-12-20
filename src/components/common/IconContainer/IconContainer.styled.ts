@@ -1,9 +1,11 @@
 import styled from "@emotion/styled";
 
-interface Iprop {
-   width: string;
-}
+import { Iwidth } from "../../../interfaces/style-interfaces";
 
-export const Container = styled.span<Iprop>`
+type TWidth = {
+   width: Iwidth;
+};
+
+export const Container = styled.span<TWidth>`
    display: block;
 `;
