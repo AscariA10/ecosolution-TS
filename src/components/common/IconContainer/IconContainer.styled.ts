@@ -1,11 +1,14 @@
 import styled from "@emotion/styled";
 
-import { Iwidth } from "../../../interfaces/style-interfaces";
+import { Iwidth, Iheight } from "../../../interfaces/style-interfaces";
 
-type TWidth = {
+type TOptions = {
    width: Iwidth;
+   height: Iheight;
 };
 
-export const Container = styled.span<TWidth>`
+export const Container = styled.span<TOptions>`
    display: block;
+   width: ${props => props.width.mobile};
+   height: ${props => props.height.mobile};
 `;
