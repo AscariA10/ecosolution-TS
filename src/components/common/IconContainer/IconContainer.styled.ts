@@ -8,7 +8,9 @@ type TOptions = {
 };
 
 export const Container = styled.span<TOptions>`
-   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    width: ${props => props.width.mobile};
    height: ${props => props.height.mobile};
 `;

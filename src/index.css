@@ -1,8 +1,12 @@
 *,
 *::before,
 *::after {
-   font-family: "Fira Sans", sans-serif;
    box-sizing: border-box;
+
+   font-family: "Fira Sans", sans-serif;
+
+   font-size: 16px;
+   line-height: 1.19;
 }
 
 html {
@@ -55,6 +59,11 @@ dd {
 }
 
 img {
+   max-width: 100%;
+   display: block;
+}
+svg {
+   max-height: 100%;
    max-width: 100%;
    display: block;
 }

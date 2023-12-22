@@ -1,14 +1,8 @@
-import { Iwidth, Iheight } from "../../../interfaces/style-interfaces";
+import { IsizeProps } from "../../../interfaces/component-int";
 
 import { Container } from "./IconContainer.styled";
 
-interface Props {
-   width: Iwidth;
-   height: Iheight;
-   children: React.ReactNode;
-}
-
-export const IconContainer: React.FC<Props> = ({ children, width, height }: Props) => {
+export const IconContainer: React.FC<IsizeProps> = ({ children, width, height }: IsizeProps) => {
    return (
       <Container width={width} height={height}>
          {children}
