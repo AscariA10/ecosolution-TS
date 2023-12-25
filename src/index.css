@@ -18,7 +18,8 @@ html {
 body {
    -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
-   color: #232323;
+   color: #173d33;
+   letter-spacing: -0.039em;
 
    scroll-behavior: smooth;
    text-rendering: optimizeSpeed;

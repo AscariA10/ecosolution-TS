@@ -8,3 +8,7 @@ export interface IsizeProps extends IcommonProps {
    width: Iwidth;
    height: Iheight;
 }
+
+export interface Ibutton {
+   title: string;
+}

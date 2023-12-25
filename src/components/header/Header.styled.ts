@@ -2,6 +2,18 @@ import styled from "@emotion/styled";
 
 import { COLORS } from "../../styles/colors/colors";
 
+export const MainHeader = styled.header`
+   padding-top: 36px;
+   padding-bottom: 128px;
+   @media screen and (min-width: 768px) {
+      padding-bottom: 114px;
+   }
+   @media screen and (min-width: 1280px) {
+      padding-top: 24px;
+      padding-bottom: 140px;
+   }
+`;
+
 export const HeaderContent = styled.div`
    display: flex;
    align-items: center;

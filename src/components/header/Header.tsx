@@ -3,11 +3,11 @@ import { InnerContainer } from "../common/InnerContainer/InnerContainer";
 import { PageLogo } from "../../assets/svg-components/PageLogo/PageLogo";
 import { ArrowDown } from "../../assets/svg-components/ArrowDown";
 import { Menu } from "../../assets/svg-components/Menu";
-import { GetButton, HeaderContent, MenuButton, IconWrapper } from "./Header.styled";
+import { MainHeader, GetButton, HeaderContent, MenuButton, IconWrapper } from "./Header.styled";
 
 export const Header: React.FC = () => {
    return (
-      <header>
+      <MainHeader>
          <InnerContainer>
             <HeaderContent>
                <PageLogo />
@@ -22,6 +22,6 @@ export const Header: React.FC = () => {
                </GetButton>
             </HeaderContent>
          </InnerContainer>
-      </header>
+      </MainHeader>
    );
 };
