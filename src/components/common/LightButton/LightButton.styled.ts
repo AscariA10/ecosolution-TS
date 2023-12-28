@@ -2,8 +2,11 @@ import styled from "@emotion/styled";
 import { COLORS } from "../../../styles/colors/colors";
 
 export const Button = styled.button`
+   margin-left: auto;
+   margin-right: auto;
    display: flex;
    align-items: center;
+   width: fit-content;
 
    padding: 4px 4px 4px 16px;
 
