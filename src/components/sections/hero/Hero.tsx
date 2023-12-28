@@ -1,5 +1,7 @@
 import heroImg from "../../../assets/images/hero/hero_img.jpg";
 import heroImg2x from "../../../assets/images/hero/hero_img@2x.jpg";
+import heroImgTablet from "../../../assets/images/hero/hero_img_tablet.jpg";
+import heroImgTablet2x from "../../../assets/images/hero/hero_img_tablet@2x.jpg";
 
 import { InnerContainer } from "../../common/InnerContainer/InnerContainer";
 import { Section } from "../../common/Section/Section";
@@ -23,9 +25,14 @@ export const Hero: React.FC = () => {
                   <Email type="mail" href="office@ecosolution.com">
                      office@ecosolution.com
                   </Email>
+                  <p>ecosolution &#169; 2023</p>
                </Contacts>
                <Picture>
-                  <source srcSet={`${heroImg} 1x, ${heroImg2x} 2x`} type="jpeg" />
+                  <source
+                     srcSet={`${heroImgTablet} 1x, ${heroImgTablet2x} 2x`}
+                     media="(min-width: 768px)"
+                  />
+                  <source srcSet={`${heroImg} 1x, ${heroImg2x} 2x`} />
                   <img src={`${heroImg}`} alt="hero_image" />
                </Picture>
             </HeroContent>

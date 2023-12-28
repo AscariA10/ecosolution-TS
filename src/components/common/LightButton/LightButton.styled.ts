@@ -11,10 +11,17 @@ export const Button = styled.button`
    padding: 4px 4px 4px 16px;
 
    background-color: ${COLORS.BACKGROUND_LIGHT};
+   color: ${COLORS.ACCENT_DARK};
    line-height: 1.13;
 
    border-radius: 19px;
    border: 1px solid ${COLORS.ACCENT};
+
+   @media screen and (min-width: 768px) {
+      grid-area: button;
+      margin-top: 19px;
+      margin-left: 0;
+   }
 `;
 
 export const IconCircle = styled.span`
