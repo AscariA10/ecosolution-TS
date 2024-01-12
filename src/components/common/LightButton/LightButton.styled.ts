@@ -13,6 +13,7 @@ export const Button = styled.button`
    background-color: ${COLORS.BACKGROUND_LIGHT};
    color: ${COLORS.ACCENT_DARK};
    line-height: 1.13;
+   letter-spacing: -0.039em;
 
    border-radius: 19px;
    border: 1px solid ${COLORS.ACCENT};
@@ -21,6 +22,11 @@ export const Button = styled.button`
       grid-area: button;
       margin-top: 19px;
       margin-left: 0;
+   }
+   @media screen and (min-width: 1280px) {
+      grid-area: button;
+      margin-top: 0;
+      margin-top: 0;
    }
 `;
 

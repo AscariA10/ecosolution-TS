@@ -13,9 +13,15 @@ export const HeroContent = styled.div`
          "title button"
          "contacts contacts"
          "picture picture";
+
+      grid-template-columns: 301px 342px;
+      column-gap: 65px;
    }
-   grid-template-columns: 300px 342px;
-   column-gap: 65px;
+   @media screen and (min-width: 1280px) {
+      grid-template-columns: 485px 363px;
+      column-gap: 296px;
+      row-gap: 20px;
+   }
 `;
 
 export const MainTitle = styled.h1`
@@ -30,6 +36,9 @@ export const MainTitle = styled.h1`
 
       font-size: 48px;
       letter-spacing: 0;
+   }
+   @media screen and (min-width: 1280px) {
+      font-size: 64px;
    }
 `;
 
@@ -54,6 +63,11 @@ export const Contacts = styled.div`
       display: flex;
       padding-top: 16px;
    }
+   @media screen and (min-width: 1280px) {
+      width: 1240px;
+      margin-top: 4px;
+      padding-top: 12px;
+   }
 `;
 
 export const Address = styled.address`
@@ -62,7 +76,11 @@ export const Address = styled.address`
    font-style: normal;
 
    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
       margin-right: 77px;
+   }
+   @media screen and (min-width: 1280px) {
+      margin-right: 492px;
    }
 `;
 
@@ -75,11 +93,17 @@ export const Email = styled.a`
    @media screen and (min-width: 768px) {
       margin-right: 50px;
    }
+   @media screen and (min-width: 1280px) {
+      margin-right: 167px;
+   }
 `;
 
-// export const Trademark = styled.p`
-
-// `
+export const Trademark = styled.p`
+   display: none;
+   @media screen and (min-width: 768px) {
+      display: block;
+   }
+`;
 
 export const Picture = styled.picture`
    margin-left: auto;
@@ -87,5 +111,9 @@ export const Picture = styled.picture`
    margin-top: 12px;
    @media screen and (min-width: 768px) {
       grid-area: picture;
+      margin-top: 16px;
+   }
+   @media screen and (min-width: 1280px) {
+      width: 1240px;
    }
 `;
