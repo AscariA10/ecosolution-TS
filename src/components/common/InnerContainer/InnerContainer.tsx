@@ -1,9 +1,8 @@
 import { Wrapper } from "./InnerContainer.styled";
+import { IcommonProps } from "../../../interfaces/component-int";
 
-interface IProps {
-   children: React.ReactNode;
-}
-
-export const InnerContainer: React.FunctionComponent<IProps> = ({ children }: IProps) => {
+export const InnerContainer: React.FunctionComponent<IcommonProps> = ({
+   children,
+}: IcommonProps) => {
    return <Wrapper>{children}</Wrapper>;
 };

@@ -12,3 +12,12 @@ export interface IsizeProps extends IcommonProps {
 export interface Ibutton {
    title: string;
 }
+
+export interface IsectionTitle {
+   title: string;
+}
+
+export interface IvalueCard extends IcommonProps {
+   title: string;
+   description: string;
+}
